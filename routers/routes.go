@@ -11,4 +11,6 @@ func init() {
 	App = echo.New()
 
 	App.GET("/", controllers.Home)
+	App.POST("/", controllers.Home)
+	App.POST("/author/create", controllers.AuthorCreate)
 }
